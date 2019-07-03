@@ -1,0 +1,29 @@
+{
+  "name": "sassy-bootstrap-boilerplate",
+  "version": "1.0.0",
+  "description": "Lean Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dist/assets/styles dist/assets/styles/base dist/assets/styles/components dist/assets/styles/pages -o dist/assets/styles --source-map true",
+    "removeCSS": "rm dist/assets/styles/*.css dist/assets/styles/*.css.map",
+    "browsersync": "node index.js",
+    "start": "npm run removeCSS & npm run sass & npm run browsersync"
+  },
+  "author": "Wilbert Caba",
+  "license": "ISC",
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "bs-html-injector": "^3.0.3",
+    "imagemin": "^6.0.0",
+    "imagemin-webp": "^5.0.0",
+    "node-sass": "^4.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilbertcaba/Sassy-Bootstrap-Boilerplate.git"
+  }
+}
